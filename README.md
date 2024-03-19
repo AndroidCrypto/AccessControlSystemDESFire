@@ -1,5 +1,5 @@
 # Building an Access Control System based on Mifare DESFire
-These are sample apps that are accompanying an article on medium.com.
+These are sample apps that are accompanying an article on medium.com about **Building an Access Control System based on Mifare DESFire**.
 
 In the code section you find 3 folder with pre-compiled Android apps in DEBUG mode:
 
