@@ -32,15 +32,17 @@ https://medium.com/@androidcrypto/mifare-desfire-ev3-a-beginner-tutorial-android
 
 ## Limitations of this app
 
-My original app is running (nearly) all commands of a real DESFire tag, but this is a version special created for the Access Control project, 
+My original ("full") app is running (nearly) all commands of a real DESFire tag, but this is a simplified version special created for the **Access Control project**, 
 so not all commands are running. This app will create the application and necessary files on it's own, and if you should try to create an 
 application or file by "transceive" commands you will get an "Illegal Command" error.
 
 The second limitation is: this app is a **time limited version**. After activation of the trial license you can use the app for **one hour**, 
 after that period of time a read or write access to the files is denied and reported as "Illegal Command".
 
-As the Access Control project is running with default AES-128 keys (factory setting key mean 16 bytes with 0x00 data), this app does not allow 
-to run the Change Key command.
+As the Access Control project is running with **default AES-128 keys** (factory setting key mean 16 bytes with 0x00 data), this app does not allow 
+to run the "Change Key" command. It is not possible to change the file settings as well.
+
+A Mifare DESFire tag can be run in 3 communication modes: Plain, MACed and Full Encrypted mode - this app is running in **Plain communication mode** only.
 
 When the license is expired after one hour there is no way to reactivate the license, but, of course, you can delete the app and (re-) install the 
 app again, but you will loose all data stored within the files.
@@ -63,11 +65,13 @@ Use the menu to run the "Trial License Request Manager"
 
 ![Trial License Request Manager](hce_03.png "Trial License Request Manager")
 
-Click on the "Get an one hour trial license"
+Click on the "Get an one hour trial license" - as the name says it is possible only one time per installation to get the one hour license.
 
 ### One Hour Trial License is activated now
 
 ![Trial License Activated](hce_04.png "The Trial License is activated")
+
+You are ready to use the HCE app with the Access Control apps (starting with Maintenance app).
 
 ### Return to Main activity
 
